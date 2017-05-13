@@ -19,8 +19,15 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  // devServer: {
+  //   historyApiFallback: true,
+  //   contentBase: './'
+  // }
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    host: process.env.IP,
+    port: process.env.PORT,
+    "public": "searching-youtube-videos-hao1995.c9users.io"
   }
 };
